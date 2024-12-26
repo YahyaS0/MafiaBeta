@@ -1,0 +1,79 @@
+/* إعدادات عامة */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2d3748;
+  min-height: 100vh;
+  background-image: url('0.11.jpeg');
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* الحاوية الرئيسية */
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 20%;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #4a5568;
+  color: white;
+  border: 1px solid #2d3748;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #3182ce;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #2b6cb0;
+}
+
+.hidden {
+  display: none;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2d3748;
+}
+
+.start-container .title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.start-container .button {
+  background-color: #4caf50;
+  font-size: 1.5rem;
+}
+
+.start-container .button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة المافيا</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="container">
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="text-center">
+      <h1 class="title">لعبة المافيا</h1>
+      <input type="text" id="playerName" placeholder="أدخل اسمك" class="input-field">
+      <div>
+        <button class="button" onclick="createRoom()">إنشاء غرفة</button>
+        <button class="button" onclick="showJoinRoom()">انضم إلى غرفة</button>
+      </div>
+    </div>
+
+    <!-- Join Room Screen -->
+    <div id="joinRoomScreen" class="text-center hidden">
+      <h2>انضم إلى غرفة</h2>
+      <input type="text" id="roomCode" placeholder="أدخل رمز الغرفة" class="input-field">
+      <button class="button" onclick="joinRoom()">انضم</button>
+    </div>
+
+    <!-- Waiting Room -->
+    <div id="waitingRoomScreen" class="hidden">
+      <h2>غرفة الانتظار</h2>
+      <div id="roomCodeDisplay"></div>
+      <ul id="playersList"></ul>
+      <button id="startGameButton" class="button hidden" onclick="startGame()">ابدأ اللعبة</button>
+    </div>
+	
+	    <div id="gameScreen" class="hidden">
+      <h2>المرحلة: <span id="gamePhase">الليل</span></h2>
+      <ul id="playersListInGame"></ul>
+      <div id="nightActions" class="hidden">
+        <h3>أفعال دور الليل</h3>
+        <div id="mafiaAction" class="hidden">
+          <h4>المافيا: اختر ضحية</h4>
+        </div>
+        <div id="doctorAction" class="hidden">
+          <h4>الطبيب: اختر شخص للإنقاذ</h4>
+        </div>
+        <div id="policeAction" class="hidden">
+          <h4>الشرطة: اختر لاعب لفحصه</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="hidden">
+      <h2>المرحلة: <span id="gamePhase">الليل</span></h2>
+      <ul id="playersListInGame"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
